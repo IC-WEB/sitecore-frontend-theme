@@ -1,0 +1,303 @@
+.hs-error-msg,
+.hs-error-msgs label {
+    color: white;
+}
+
+.hs-error-msgs {
+    padding-left: 1.2rem;
+}
+
+/*====================== Introduction START =======================*/
+.intro-container {
+    padding: 60px 20px;
+    background: url('/images/bg/about-intro.png') no-repeat center center / cover;
+    text-align: center;
+    color: white;
+}
+
+.intro-title {
+    margin-bottom: 20px;
+}
+
+.intro-desc {
+    font-family: "Krungthai Fast Web";
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-size-home {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    
+    .intro-container {
+        background: url("../img/bg/about-intro-2.png") no-repeat center center /
+            cover;
+    }
+
+    .intro-inner {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .intro-inner > div:first-child {
+        width: 30%;
+    }
+
+    .intro-inner > div:last-child {
+        width: 70%;
+    }
+
+    .intro-title,
+    .intro-desc {
+        text-align: left;
+    }
+
+    .intro-title {
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .intro-inner {
+        max-width: 1200px;
+    }
+}
+/*====================== Introduction END =======================*/
+
+/*====================== Mission START =======================*/
+.mission-container {
+    padding: 50px 0;
+}
+
+.misstion-text {
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .mission-container {
+        padding: 80px 0;
+        background: url('/images/bg/mission-bg.png') no-repeat right bottom / 30%;
+    }
+
+    .mission-inner {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        gap: 20px;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .mission-inner .left,
+    .mission-inner .right {
+        width: 50%;
+    }
+
+    .mission-inner .right img {
+        border-radius: 8px;
+    }
+
+    .mission-text {
+        padding: 0;
+    }
+
+    .mission-text .topic-title {
+        font-size: 36px;
+        line-height: 2.8rem;
+    }
+
+    .mission-text .topic-subtitle {
+        font-weight: 700;
+    }
+
+    .mission-text:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mission-inner {
+        max-width: 1200px;
+    }
+}
+
+/*====================== Mission END =======================*/
+
+/*====================== Core value START =======================*/
+.coreValue-container {
+    position: relative;
+}
+.coreValue-head {
+    padding: 40px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.coreValue-head .topic-subtitle {
+    color: white;
+}
+
+.coreValue-head .topic-subtitle {
+    margin-bottom: 0;
+}
+
+.coreValue-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 370px;
+}
+
+.coreValue-card img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.coreValue-card.agile {
+    height: 450px;
+    background: url("/images/pages/about/core-value/core-values-1.png") no-repeat center
+        center / cover;
+}
+
+.coreValue-card.religible {
+    background: url("/images/pages/about/core-value/core-values-2.png") no-repeat center
+        center / cover;
+}
+
+.coreValue-card.innovate {
+    background: url("/images/pages/about/core-value/core-values-3.png") no-repeat center
+        center / cover;
+}
+
+.coreValue-card.stability {
+    background: url("/images/pages/about/core-value/core-values-4.png") no-repeat center
+        center / cover;
+}
+
+.coreValue-card.equality {
+    background: url("/images/pages/about/core-value/core-values-5.png") no-repeat center
+        center / cover;
+}
+
+.coreValue-card h2 {
+    font-size: 100px;
+    color: white;
+    line-height: 5.5rem;
+}
+
+.coreValueTitle {
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.coreValueTitle span {
+    color: var(--light-blue3);
+}
+
+.coreValueDesc {
+    font-family: 'Krungthai Fast Web', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .coreValue-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .coreValue-card {
+        height: 420px;
+        flex-basis: 100%;
+        justify-content: flex-start;
+    }
+
+    .coreValue-card.agile {
+        height: 420px;
+    }
+
+    .coreValue-card img {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .coreValueTitle {
+        font-size: 30px;
+    }
+}
+
+/*====================== Core value END =======================*/
+
+/*====================== Culture START =======================*/
+.culture-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--light-gray2);
+}
+
+.culture-card {
+    margin: 80px 0;
+}
+
+.culture-card img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.culture-card  p {
+    font-size: 20px;
+    color: var(--light-blue7)
+}
+
+.culture-card:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .culture-flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .culture-card {
+        flex-basis: 100%;
+        margin: 20px 0;
+    }
+
+    .culture-card img { 
+        width: auto;
+        height: 80px;
+    }
+
+    .culture-card .topic-title {
+        font-size: 32px;
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .culture-flex {
+        max-width: 1200px;
+    }
+}
+/*====================== Culture END=======================*/

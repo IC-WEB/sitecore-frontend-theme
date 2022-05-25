@@ -1,0 +1,468 @@
+.hs-error-msg,
+.hs-error-msgs label {
+    color: white;
+}
+
+.hs-error-msgs {
+    padding-left: 1.2rem;
+}
+
+/*====================== Highlight START =======================*/
+.highlight {
+    position: relative;
+}
+
+.highlight-img {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.highlight-img:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('/images/bg/video-filter.png') no-repeat center center / cover;
+    z-index: 1;
+}
+
+.highlight-img.no-filter::before {
+    display: none;
+}
+
+.highlight-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-img video {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highlight-overlay {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.highlight-overlay h2 {
+    margin-bottom: 30px;
+}
+
+.highlight-overlay p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.findJob {
+    width: fit-content;
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.findJob .list {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.findJob .list li {
+    font-size: 18px;
+    border-top: 1px solid var(--light-blue2);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.findJob .list .job_title {
+    font-family: "Krungthai Fast", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.findJob .list .post_date {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search-group > input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: var(--dark-blue);
+}
+
+.search-group > input:focus {
+    outline: none;
+}
+
+.search-group > input::placeholder {
+    color: var(--dark-blue);
+}
+
+.search-group .search-icon {
+    width: 10%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    background: url("/images/icon/search-icon.png") no-repeat left center / 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .highlight-img {
+        height: 0;
+        padding-bottom: 51%;
+    }
+
+    .highlight-img video {
+        width: 100%;
+        height: auto;
+    }
+
+    .highlight-img img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .search-group {
+        width: 400px;
+    }
+
+    .findJob {
+        bottom: 14%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .highlight-overlay h2 {
+        font-size: 60px;
+        line-height: 5rem;
+    }
+}
+
+/*====================== Highlight END =======================*/
+
+/*====================== About arise START =======================*/
+.about-container {
+    padding: 50px 20px;
+    background: url("/images/bg/about-arise-2.png") no-repeat center center /
+        cover;
+    text-align: center;
+}
+
+.infinitasXaccenture {
+    width: 200px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.about-container .desc {
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.05rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: white;
+}
+
+.arise {
+    height: 25px;
+    margin-top: -5px;
+}
+
+.about-link {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    color: white;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-link:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
+.about-link::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-link:hover::after {
+    transform: scale(0);
+    transform-origin: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        background-image: url("/images/bg/about-arise-2.1.png");
+    }
+
+    .infinitasXaccenture {
+        width: 300px;
+    }
+
+    .about-container .desc {
+        font-size: 16px;
+        line-height: 2rem;
+    }
+
+    .arise {
+        height: 20px;
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    .about-link {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+/*====================== About arise END =======================*/
+
+/*====================== Slogan START =======================*/
+.slogan-container {
+    height: 320px;
+    background: url("/images/bg/slogan-bg.png") no-repeat center center / cover;
+    position: relative;
+}
+
+.slogan-text-wrap {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .slogan-container {
+        height: 150px;
+        background: url("/images/bg/slogan-bg-2.png") no-repeat center center /
+            cover;
+    }
+
+    .slogan-text-wrap h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slogan-container {
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .slogan-container {
+        height: 220px;
+    }
+}
+
+/*====================== Slogan END =======================*/
+
+/*====================== News and Activities START =======================*/
+.na-inner {
+    padding: 60px 0;
+}
+
+.na-inner .topic-title {
+    margin-bottom: 20px;
+}
+
+.na-subtitle {
+    display: none;
+    text-align: center;
+    color: var(--light-blue);
+    margin-bottom: 25px;
+}
+
+.na-swiper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+} 
+
+.na-card {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.na-card > img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.na-desc {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.na-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.na-detail {
+    font-size: 16px;
+    color: var(--light-blue);
+    height: 80px;
+}
+
+.na-cate {
+    color: var(--light-blue3);
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .na-subtitle {
+        display: block;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .na-desc {
+        padding: 20px 0;
+        text-align: left;
+    }
+
+    .na-inner {
+        padding-bottom: 80px;
+    }
+}
+
+
+/*====================== News and Activities END =======================*/
+
+/*====================== Position START =======================*/
+.position-container {
+    background: url("/images/bg/position-bg.png") no-repeat right bottom / 40%, var(--light-gray2);
+}
+
+.position-left {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .na-container {
+        background: url('/images/bg/news-activities-bg.png') no-repeat left top / 50%;
+    }
+    
+    .position-container {
+        background-image: url("/images/bg/position-bg-2.png");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .na-container {
+        background-size: 40%;
+    }
+
+    .position-container {
+        padding: 0;
+        background-size: 30%;
+    }
+
+    .position-inner {
+        display: flex;
+        gap: 40px;
+        height: 750px;
+    }
+
+    .position-left {
+        width: 50%;
+        display: block;
+    }
+
+    .position-right {
+        width: 50%;
+    }
+
+    .position-left img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .position-right {
+        padding: 50px 0;
+    }
+
+    .position-right .topic-subtitle,
+    .position-right .topic-title {
+        text-align: left;
+    }
+
+    .position-wrapper {
+        max-width: 350px;
+    }
+
+    .text-left-ip-pro {
+        text-align: left !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .na-container {
+        background-size: 35%;
+    }
+
+    .position-inner {
+        gap: 0;
+    }
+
+    .position-left img {
+        width: 80%;
+    }
+}
+/*====================== Position END =======================*/
